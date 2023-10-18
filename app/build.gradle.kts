@@ -73,7 +73,7 @@ dependencies {
 
 
     // Compose Navigation
-    implementation ("androidx.navigation:navigation-compose:2.7.2")
+    implementation ("androidx.navigation:navigation-compose:2.7.3")
 
     // Firebase
     implementation ("com.google.firebase:firebase-auth-ktx:22.1.1")
