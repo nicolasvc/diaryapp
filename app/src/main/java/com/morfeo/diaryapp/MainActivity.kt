@@ -27,11 +27,12 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     val navController = rememberNavController()
-                    SetUpNavGraph(startDestination = Screen.Authentication.route, navController = navController )
+                    SetUpNavGraph(startDestination = Screen.Authentication.route, navController = navController)
 
                 }
             }
         }
     }
 }
+
 
