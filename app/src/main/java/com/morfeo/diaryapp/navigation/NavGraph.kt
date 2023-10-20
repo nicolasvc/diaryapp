@@ -76,7 +76,8 @@ fun NavGraphBuilder.authenticationRoute(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+
+
 fun NavGraphBuilder.homeRoute(
     navigateToWrite: () -> Unit
 ) {
@@ -88,7 +89,9 @@ fun NavGraphBuilder.homeRoute(
             onSignOutClicked = {},
             onMenuClicked = {
                 scope.launch {
-                    drawerState.open()
+                    drawerState.apply {
+                        if (isClosed) open() else close()
+                    }
                 }
             },
             navigateToWrite = navigateToWrite
